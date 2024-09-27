@@ -10,6 +10,11 @@ jobs:
       - name: Installing Node.JS
         run: |
           sudo apt install npm -y
-          cd tailssearch
+          cd tailssearch/src
+      - name: Installing Deps
+        run: |
+          npm install url
+          npm install fs
+          npm install http
       - name: Server Should Be Running!
         run: node app.js
