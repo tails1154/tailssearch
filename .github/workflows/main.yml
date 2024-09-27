@@ -7,10 +7,9 @@ jobs:
     steps:
       - name: Clone Repo
         run: git clone https://github.com/tails2012timnew/tailssearch
-      - name: Installing Deps
+      - name: Installing Node.JS
         run: |
           sudo apt install npm -y
           cd tailssearch
-          npm install
       - name: Server Should Be Running!
         run: node app.js
