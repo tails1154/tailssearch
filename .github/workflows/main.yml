@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  start:
+    name: Starting
+    runs-on: debian-latest
+    steps:
+      - name: Clone Repo
+        run: git clone https://github.com/tails2012timnew/tailssearch/tailssearch.git
+      - name: Installing Deps
+        run: |
+          sudo apt install npm -y
+          cd tailssearch
+          npm install
+      - name: Server Should Be Running!
+        run: node app.js
