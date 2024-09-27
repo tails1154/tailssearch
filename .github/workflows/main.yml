@@ -2,8 +2,8 @@ on:
   workflow_dispatch:
 jobs:
   start:
-    name: Starting
-    runs-on: debian-12
+    name: Server Status
+    runs-on: ubuntu-latest
     steps:
       - name: Clone Repo
         run: git clone https://github.com/tails2012timnew/tailssearch/tailssearch.git
