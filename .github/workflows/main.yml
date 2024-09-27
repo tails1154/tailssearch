@@ -9,13 +9,13 @@ jobs:
         run: git clone https://github.com/tails2012timnew/tailssearch
       - name: Installing Node.JS
         run: |
-          git clone https://github.com/tails2012timnew/tailssearch
+          #git clone https://github.com/tails2012timnew/tailssearch
           sudo apt install npm -y
           cd tailssearch
           cd src
       - name: Installing Deps
         run: |
-          git clone https://github.com/tails2012timnew/tailssearch
+          #git clone https://github.com/tails2012timnew/tailssearch
           cd src
           npm install
       - name: Server Should Be Running!
