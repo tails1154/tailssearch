@@ -3,7 +3,7 @@ on:
 jobs:
   start:
     name: Starting
-    runs-on: debian-latest
+    runs-on: debian-12
     steps:
       - name: Clone Repo
         run: git clone https://github.com/tails2012timnew/tailssearch/tailssearch.git
