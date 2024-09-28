@@ -12,12 +12,12 @@ jobs:
           #git clone https://github.com/tails2012timnew/tailssearch
           sudo apt install npm -y
           cd tailssearch
-          cd src
       - name: Installing Deps
         run: |
           #git clone https://github.com/tails2012timnew/tailssearch
+          npm install
           ls
       - name: Server Should Be Running!
         run: |
           ls
-          node src/app.js
+          node app.js
