@@ -17,8 +17,7 @@ jobs:
         run: |
           #git clone https://github.com/tails2012timnew/tailssearch
           ls
-          npm install
       - name: Server Should Be Running!
         run: |
           ls
-          node app.js
+          node src/app.js
