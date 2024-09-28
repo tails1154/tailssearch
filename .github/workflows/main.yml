@@ -5,13 +5,10 @@ jobs:
     name: Server Status
     runs-on: ubuntu-latest
     steps:
-      - name: Clone Repo
-        run: git clone https://github.com/tails2012timnew/tailssearch
       - name: Installing Node.JS
         run: |
           #git clone https://github.com/tails2012timnew/tailssearch
           sudo apt install npm -y
-          cd tailssearch
       - name: Installing Deps
         run: |
           #git clone https://github.com/tails2012timnew/tailssearch
